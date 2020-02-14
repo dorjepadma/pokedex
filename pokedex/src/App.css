@@ -19,7 +19,10 @@ h1, h2 {
 * {
     box-sizing: border-box;
 }
-
+img {
+    width: 33%;
+    height: auto;
+}
 header, main {
     padding: 10px;
 }
@@ -46,11 +49,17 @@ section {
     width: 90%;
     min-width: 650px;
 }
-.hornedBeast {
+.info-container
+{
+font-size: 1.5em;
+margin-left: 20px;
+}
+
+.pokemon {
     display: flex;
     flex-wrap: wrap;
 }
-.hornedBeast li {
+.pokemon li {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,6 +79,7 @@ section {
 }
 .pokemon li h2{
     font-size: 1.5em;
+    margin-right: 20px;
 }
 
 .pokemon li .pokemon-type {
@@ -77,7 +87,7 @@ section {
     color: black;
 
 }
-.pokemon li .horns {
+.pokemon li .hp {
     font-size: .8em;
 }
 .image-container {

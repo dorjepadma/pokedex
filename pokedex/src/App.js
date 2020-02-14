@@ -3,7 +3,7 @@ import Header from './header';
 import pokeArray from "./mockPokeData.js"
 import Pokemon from './pokeItem.js';
 import './App.css';
-import pokeball from "./assets/pokeball.jpg";
+import pokeball from './assets/pokeball.jpg';
 
 export default class App extends Component {
   state = { selected: null,
@@ -13,7 +13,7 @@ export default class App extends Component {
   render () {
     return (
       <>
-      <Header/>
+      <Header pokeball={pokeball}/>
       <Pokemon pokemon={pokeArray[0]}   />
       </>
     )

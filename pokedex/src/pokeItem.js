@@ -12,10 +12,6 @@ export default class Pokemon extends Component {
                 < p className="hp">
                     {this.props.pokemon.hp}
                 </p>
-                {/* < p className="type_1">
-                    <h3>{this.props.pokemon.type_1
-    }</h3> */}
-                {/* </p> */}
             </div>
             <div
             className="url-image">

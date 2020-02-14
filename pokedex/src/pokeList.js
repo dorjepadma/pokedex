@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import pokeArray from './mockPokeData.js';
 
+
 export default class Pokemon extends Component {
-  state = { name: ""};
+     state = { data: [] };
 
   render() {
+    const mappedData = pokeArray.map(poke => { <pokeItem pokemon={poke} /> }).
       return (
-          <div>
-              {this.props.pokemon.map(function(request)}
-          </div>
+       <ul>
+          {mappedData}  
+        </ul>
       )
-  }
+
+      }}
