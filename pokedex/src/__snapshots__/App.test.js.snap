@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App.js correctly 1`] = `
+Array [
+  <header>
+    <img
+      alt="pan"
+      src="../data/assets/pan.jpg"
+    />
+    <h1>
+      Find your Pokemon!
+    </h1>
+  </header>,
+  <li>
+    <div
+      className="info-container"
+    >
+      <h2>
+        venusaur
+      </h2>
+      <p
+        className="type_1"
+      >
+        grass
+      </p>
+      <p
+        className="hp"
+      >
+        80
+      </p>
+    </div>
+    <div
+      className="url-image"
+    >
+      <img
+        alt="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
+        src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
+      />
+    </div>
+  </li>,
+]
+`;
