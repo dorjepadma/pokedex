@@ -6,11 +6,10 @@ export default class Pokemon extends Component {
      state = { data: [] };
 
   render() {
-    const mappedData = pokeArray.map(poke => { <pokeItem pokemon={poke} /> }).
+    const mappedData = this.props.pokeArray.map(poke => { <pokeItem pokemon={poke} /> })
       return (
        <ul>
           {mappedData}  
         </ul>
       )
-
       }}
