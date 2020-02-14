@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './header';
-import pokeArray from "./mockPokeData.js"
-import Pokemon from './pokeItem.js';
+// import pokeArray from './mockPokeData.js';
+import Pokemon from './pokeList';
 import './App.css';
 import pokeball from './assets/pokeball.jpg';
 import request from 'superagent';
@@ -9,6 +9,7 @@ import request from 'superagent';
 export default class App extends Component {
   state = { selected: null,
           hp: null,
+          type_1: null,
           pokemon: []
         }
 async componentDidMount(){
@@ -20,7 +21,7 @@ this.setState({ pokemon: data.body.results})
     return (
       <>
       <Header pokeball={pokeball}/>
-      <Pokemon pokemon={this.state.pokemon}   />
+      <Pokemon pokeArray={this.state.pokemon}/>
       </>
     )
    
